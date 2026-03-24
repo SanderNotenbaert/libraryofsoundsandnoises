@@ -65,7 +65,7 @@
 </head>
 <body>
   <div class="player">
-    <div class="title" id="title">My Audio Track</div>
+    <div class="title" id="title">Recording</div>
 
     <canvas id="wave"></canvas>
 
@@ -93,7 +93,7 @@
     const canvas = document.getElementById('wave');
     const download = document.getElementById('download');
     download.href = audio.src;
-    document.document.getElementById('title').innerHTML = file.replaceAll("_", " ").replace(".mp3", "");
+    document.getElementById('title').innerHTML = file.replaceAll("_", " ").replace(".mp3", "");
     const ctx = canvas.getContext('2d');
     const timeDisplay = document.getElementById('time');
 
